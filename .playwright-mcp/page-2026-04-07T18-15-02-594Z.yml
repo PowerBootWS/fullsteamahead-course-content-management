@@ -1,0 +1,62 @@
+- generic [ref=e2]:
+  - region "Skip to main content":
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#__docusaurus_skipToContent_fallback"
+  - navigation "Main" [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - button "Toggle navigation bar" [ref=e7] [cursor=pointer]:
+          - img [ref=e8]
+        - link "HighLevel Logo" [ref=e10] [cursor=pointer]:
+          - /url: /docs/
+          - img "HighLevel Logo" [ref=e12]
+      - generic [ref=e14]:
+        - button "expand searchbar"
+        - searchbox "Search" [disabled] [ref=e15]
+  - generic [ref=e18]:
+    - text: post
+    - main [ref=e19]:
+      - generic [ref=e23]:
+        - article [ref=e24]:
+          - navigation "Breadcrumbs" [ref=e25]:
+            - list [ref=e26]:
+              - listitem [ref=e27]:
+                - link "Home page" [ref=e28] [cursor=pointer]:
+                  - /url: /docs/
+                  - img [ref=e29]
+              - listitem [ref=e31]:
+                - generic [ref=e32]: Courses
+              - listitem [ref=e33]:
+                - generic [ref=e34]: UNTAGGED
+              - listitem [ref=e35]:
+                - generic [ref=e36]: Import Courses
+          - generic [ref=e39]:
+            - heading "Import Courses" [level=1] [ref=e40]
+            - generic [ref=e41]:
+              - generic [ref=e42]: POST
+              - heading "/courses/courses-exporter/public/import" [level=2] [ref=e43]
+            - paragraph [ref=e45]: Import Courses through public channels
+            - heading "RequestDirect link to Request" [level=2] [ref=e47]:
+              - text: Request
+              - link "Direct link to Request" [ref=e48] [cursor=pointer]:
+                - /url: "#request"
+                - text: "#"
+            - generic [ref=e51]:
+              - generic [ref=e52]:
+                - heading "ResponsesDirect link to Responses" [level=2] [ref=e53]:
+                  - text: Responses
+                  - link "Direct link to Responses" [ref=e54] [cursor=pointer]:
+                    - /url: "#responses"
+                    - text: "#"
+                - tablist [ref=e56]:
+                  - tab "201" [selected] [ref=e57] [cursor=pointer]
+              - tabpanel [ref=e59]
+        - navigation "Docs pages" [ref=e66]:
+          - link "Previous « Introduction" [ref=e67] [cursor=pointer]:
+            - /url: /docs/ghl/courses/memberships-api
+            - generic [ref=e68]: Previous
+            - generic [ref=e69]: « Introduction
+          - link "Next Introduction »" [ref=e70] [cursor=pointer]:
+            - /url: /docs/ghl/emails/email-api
+            - generic [ref=e71]: Next
+            - generic [ref=e72]: Introduction »
