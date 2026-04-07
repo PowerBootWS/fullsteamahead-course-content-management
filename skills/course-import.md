@@ -1,6 +1,5 @@
 # Course Import Skill
-
-Import a new course from Vimeo to GoHighLevel.
+Import course content from Vimeo to GoHighLevel.
 
 ## When to Use
 
@@ -16,30 +15,31 @@ Videos must follow: `{COURSE_CODE} Chapter {N} Objective {M}`
 
 Example: `2B1 Chapter 1 Objective 3`
 
-## Import Steps
+## Course Title Format
 
-1. **Get videos from Vimeo** - Search for videos matching `${COURSE_CODE} Chapter`
+Course title should be just the class, paper, and part (e.g., "Second Class Part B Paper 2").
+The chapter names go in the category/topic titles (e.g., "Chapter 1", "Chapter 2").
 
-2. **Parse video names** - Each video name is parsed to extract:
-   - Course code (e.g., `2B1`)
-   - Chapter number (e.g., `1`)
-   - Objective number (e.g., `3`)
-   - Lesson ID (e.g., `2B1-1-3` for tutoring agent)
+## Post Description Structure
 
-3. **Build course JSON** - Create GHL import structure:
-   - Categories = Chapters
-   - Posts = Objectives (lessons)
+Each objective post's description contains:
+1. **Vimeo embed** - Full responsive embed HTML (top)
+2. **Tutoring agent iframe** - Below the video
 
-4. **Generate embed codes**:
-   - Vimeo embed in post content
-   - Tutoring agent iframe in post description
-
-5. **Import to GHL** - POST to GHL courses import API
-
-## Tutoring Agent Embed
-
-Each objective post description includes:
 ```html
+<!-- Vimeo embed (responsive 16:9 wrapper) -->
+<div style="padding:56.25% 0 0 0;position:relative;">
+  <iframe src="https://player.vimeo.com/video/{VIDEO_ID}?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+    title="{LESSON_ID}">
+  </iframe>
+</div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<!-- Tutoring agent iframe -->
 <iframe
   src="https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson={lessonId}"
   width="100%"
@@ -51,10 +51,15 @@ Each objective post description includes:
 
 Where `{lessonId}` is derived from video name (e.g., `2B1-1-3`).
 
+## GHL Import Structure
+
+- **Product/Title** = Course name (e.g., "Second Class Part B Paper 2")
+- **Categories** = Chapters (e.g., "Chapter 1", "Chapter 2")
+- **Posts** = Objectives (e.g., "Objective 1", "Objective 2")
+
 ## Running the Import
 
 ```bash
-# Navigate to project
 cd /home/debian/Projects/fullsteamahead-course-content-management
 
 # Install dependencies (first time)
@@ -63,20 +68,28 @@ npm install
 # Dry run to preview
 npx tsx src/main.ts {COURSE_CODE} --dry-run
 
-# Live import
-npx tsx src/main.ts {COURSE_CODE} --title "{Full Course Title}"
+# Dry run with chapter filter
+npx tsx src/main.ts {COURSE_CODE} --dry-run --chapter {N}
+
+# Live import (all chapters)
+npx tsx src/main.ts {COURSE_CODE} --title "{Course Title}"
+
+# Live import (specific chapter)
+npx tsx src/main.ts {COURSE_CODE} --title "{Course Title}" --chapter {N}
 ```
 
 ## Example
 
 Importing 2B1 course:
 ```bash
-npx tsx src/main.ts 2B1 --title "2nd Class Part B Paper 1"
+npx tsx src/main.ts 2B1 --title "Second Class Part B Paper 1"
 ```
 
-This will:
-1. Search Vimeo for videos matching "2B1 Chapter"
-2. Create chapters (topics) for each unique chapter number
-3. Create posts (objectives) for each video
-4. Add tutoring agent iframe with lesson IDs like `2B1-1-3`
-5. Import everything to GHL in one API call
+Importing only Chapter 1 of 2B2:
+```bash
+npx tsx src/main.ts 2B2 --title "Second Class Part B Paper 2" --chapter 1
+```
+
+## Import History
+
+Imported course JSONs are stored in `imports/{COURSE_CODE}/{DATE}.json` for reference and troubleshooting.

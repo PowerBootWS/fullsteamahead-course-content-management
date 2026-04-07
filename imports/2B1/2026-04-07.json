@@ -1,0 +1,348 @@
+{
+  "products": [
+    {
+      "title": "Second Class Part B Paper 1",
+      "description": "Course imported from Vimeo: Second Class Part B Paper 1",
+      "categories": [
+        {
+          "title": "Chapter 1",
+          "visibility": "published",
+          "posts": [
+            {
+              "title": "Objective 1",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176247121?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-1-1\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-1-1\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 2",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176247699?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-1-2\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-1-2\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 3",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176248116?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-1-3\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-1-3\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 4",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176248701?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-1-4\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-1-4\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 5",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176248992?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-1-5\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-1-5\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 6",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176249423?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-1-6\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-1-6\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 7",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176249725?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-1-7\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-1-7\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 8",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176250015?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-1-8\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-1-8\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 9",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176250306?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-1-9\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-1-9\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 10",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176250767?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-1-10\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-1-10\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 11",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176251207?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-1-11\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-1-11\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 12",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176251850?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-1-12\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-1-12\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            }
+          ]
+        },
+        {
+          "title": "Chapter 2",
+          "visibility": "published",
+          "posts": [
+            {
+              "title": "Objective 1",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176252130?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-2-1\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-2-1\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 2",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176252457?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-2-2\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-2-2\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 3",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176252797?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-2-3\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-2-3\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 4",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176253210?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-2-4\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-2-4\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 6",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176253669?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-2-6\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-2-6\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 7",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176254243?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-2-7\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-2-7\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 8",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176254928?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-2-8\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-2-8\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 9",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176255315?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-2-9\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-2-9\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 10",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176255696?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-2-10\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-2-10\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 11",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176256033?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-2-11\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-2-11\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 12",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176256415?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-2-12\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-2-12\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            }
+          ]
+        },
+        {
+          "title": "Chapter 3",
+          "visibility": "published",
+          "posts": [
+            {
+              "title": "Objective 1",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176256767?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-3-1\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-3-1\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 2",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176257557?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-3-2\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-3-2\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 3",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176257822?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-3-3\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-3-3\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 4",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176258256?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-3-4\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-3-4\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 5",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176258627?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-3-5\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-3-5\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 6",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176259268?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-3-6\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-3-6\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            }
+          ]
+        },
+        {
+          "title": "Chapter 4",
+          "visibility": "published",
+          "posts": [
+            {
+              "title": "Objective 1",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176259632?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-4-1\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-4-1\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 2",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176260211?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-4-2\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-4-2\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 3",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176260588?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-4-3\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-4-3\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 4",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176260926?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-4-4\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-4-4\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 5",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176261363?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-4-5\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-4-5\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 6",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176261895?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-4-6\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-4-6\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 7",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176262207?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-4-7\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-4-7\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 8",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176262574?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-4-8\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-4-8\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 9",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176262854?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-4-9\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-4-9\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 10",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176263367?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-4-10\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-4-10\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 11",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176263680?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-4-11\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-4-11\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            }
+          ]
+        },
+        {
+          "title": "Chapter 5",
+          "visibility": "published",
+          "posts": [
+            {
+              "title": "Objective 1",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176264128?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-5-1\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-5-1\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 2",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176264847?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-5-2\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-5-2\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 3",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176265271?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-5-3\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-5-3\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 4",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176265635?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-5-4\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-5-4\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 5",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176266295?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-5-5\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-5-5\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 6",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176266714?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-5-6\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-5-6\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 7",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176267288?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-5-7\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-5-7\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            }
+          ]
+        },
+        {
+          "title": "Chapter 6",
+          "visibility": "published",
+          "posts": [
+            {
+              "title": "Objective 1",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176267664?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-6-1\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-6-1\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 2",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176268101?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-6-2\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-6-2\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            },
+            {
+              "title": "Objective 3",
+              "visibility": "published",
+              "contentType": "video",
+              "description": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1176268365?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"2B1-6-3\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n<iframe\n  src=\"https://fsachat.fullsteamahead.ca/?user={{contact.email}}&amp;lesson=2B1-6-3\"\n  width=\"100%\"\n  height=\"800\"\n  frameborder=\"0\"\n  allow=\"fullscreen\">\n</iframe>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+Dry run complete. No changes made.

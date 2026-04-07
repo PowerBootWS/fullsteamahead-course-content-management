@@ -44,6 +44,7 @@ export interface GHLPost {
   description?: string;
   bucketVideoUrl?: string;
   postMaterials?: GHLEPostMaterial[];
+  embedHtml?: string;
 }
 
 export interface GHLEPostMaterial {

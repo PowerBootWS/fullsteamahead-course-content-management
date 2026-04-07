@@ -19,6 +19,7 @@ interface CliOptions {
   courseCode: string;
   dryRun: boolean;
   title?: string;
+  chapter?: number;
 }
 
 function parseCliArgs(): CliOptions {
@@ -26,13 +27,14 @@ function parseCliArgs(): CliOptions {
     options: {
       'dry-run': { type: 'boolean', default: false },
       title: { type: 'string' },
+      chapter: { type: 'string' },
     },
     allowPositionals: true,
   });
 
   if (positionals.length === 0) {
     console.error('Error: Course code is required');
-    console.error('Usage: npx tsx src/main.ts <COURSE_CODE> [--dry-run] [--title "Course Title"]');
+    console.error('Usage: npx tsx src/main.ts <COURSE_CODE> [--dry-run] [--title "Course Title"] [--chapter N]');
     process.exit(1);
   }
 
@@ -40,6 +42,7 @@ function parseCliArgs(): CliOptions {
     courseCode: positionals[0],
     dryRun: values['dry-run'] as boolean,
     title: values.title as string | undefined,
+    chapter: values.chapter ? parseInt(values.chapter as string, 10) : undefined,
   };
 }
 
@@ -59,9 +62,9 @@ async function promptForCourseTitle(): Promise<string> {
 }
 
 async function searchVimeoVideos(accessToken: string, query: string): Promise<any[]> {
-  // Using Vimeo API directly since we have OAuth credentials
+  // Search ONLY the authenticated user's videos, not all of Vimeo
   const response = await fetch(
-    `https://api.vimeo.com/videos?query=${encodeURIComponent(query)}&sort=date&direction=asc`,
+    `https://api.vimeo.com/me/videos?query=${encodeURIComponent(query)}&sort=date&direction=asc&per_page=50`,
     {
       headers: {
         'Authorization': `Bearer ${accessToken}`,
@@ -130,7 +133,7 @@ async function getVimeoVideoDetails(accessToken: string, videoId: string): Promi
 
 async function main() {
   const options = parseCliArgs();
-  const { courseCode, dryRun, title: cliTitle } = options;
+  const { courseCode, dryRun, title: cliTitle, chapter: chapterFilter } = options;
 
   // Validate required env vars
   if (!GHL_API || !GHL_LOCATION_ID) {
@@ -197,6 +200,12 @@ async function main() {
 
     const parsed = parseVideoName(name);
     if (!parsed) {
+      continue;
+    }
+
+    // Filter by chapter if specified
+    if (chapterFilter !== undefined && parsed.chapter !== chapterFilter) {
+      console.log(`  Skipping "${name}" - chapter ${parsed.chapter} != ${chapterFilter}`);
       continue;
     }
 

@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Read(//tmp/vimeo-mcp/**)"
+      "Read(//tmp/vimeo-mcp/**)",
+      "Bash(curl -s -H 'Authorization: bearer b2c76d8a493829d652cd94dfb935a69d' 'https://api.vimeo.com/videos?query=2B2%20Chapter&per_page=15')",
+      "Bash(curl -s -H 'Authorization: bearer b2c76d8a493829d652cd94dfb935a69d' 'https://api.vimeo.com/videos?query=2B2&per_page=15')",
+      "Bash(curl -s -H 'Authorization: bearer b2c76d8a493829d652cd94dfb935a69d' 'https://api.vimeo.com/videos?query=Chapter&per_page=50')",
+      "Bash(curl -s -H 'Authorization: bearer b2c76d8a493829d652cd94dfb935a69d' 'https://api.vimeo.com/videos?query=2B1%20Chapter&per_page=15')",
+      "Bash(curl -s -H 'Authorization: bearer b2c76d8a493829d652cd94dfb935a69d' 'https://api.vimeo.com/me/videos?per_page=50')"
     ]
   }
 }

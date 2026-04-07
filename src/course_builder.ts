@@ -20,15 +20,10 @@ export interface VideoDetails {
 const TUTORING_AGENT_BASE_URL = 'https://fsachat.fullsteamahead.ca';
 const VIMEO_EMBED_BASE = 'https://player.vimeo.com/video';
 
-export function generateVimeoEmbedHtml(videoId: string): string {
-  return `<iframe
-  src="${VIMEO_EMBED_BASE}/${videoId}"
-  width="640"
-  height="360"
-  frameborder="0"
-  allow="autoplay; fullscreen; picture-in-picture"
-  allowfullscreen>
-</iframe>`;
+export function generateVimeoEmbedHtml(videoId: string, title?: string): string {
+  // Full responsive Vimeo embed with 16:9 aspect ratio wrapper
+  // Matches the format that GHL expects for embed source
+  return `<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="${VIMEO_EMBED_BASE}/${videoId}?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="${title || 'Video'}"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`;
 }
 
 export function generateTutoringAgentHtml(lessonId: string): string {
@@ -59,14 +54,14 @@ export function buildCourseJson(
 
     const posts: GHLPost[] = sortedVideos.map((video) => {
       const tutoringAgentHtml = generateTutoringAgentHtml(video.parsed.lessonId);
-      const vimeoEmbedHtml = generateVimeoEmbedHtml(video.videoId);
+      const vimeoEmbedHtml = generateVimeoEmbedHtml(video.videoId, video.parsed.lessonId);
 
       return {
         title: `Objective ${video.parsed.objective}`,
         visibility: 'published' as const,
         contentType: 'video',
-        description: `${tutoringAgentHtml}\n\n${vimeoEmbedHtml}`,
-        bucketVideoUrl: video.embedUrl,
+        // Description: Vimeo embed first, then tutoring agent below
+        description: `${vimeoEmbedHtml}\n\n${tutoringAgentHtml}`,
       };
     });
 
