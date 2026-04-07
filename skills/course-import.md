@@ -78,16 +78,44 @@ npx tsx src/main.ts {COURSE_CODE} --title "{Course Title}"
 npx tsx src/main.ts {COURSE_CODE} --title "{Course Title}" --chapter {N}
 ```
 
-## Example
+## Importing with Thumbnails
 
-Importing 2B1 course:
+Thumbnails are extracted from Vimeo and uploaded to GHL media library, then set on posts.
+
+### Step 1: Extract Thumbnails
+
+```bash
+# Extract thumbnails for all chapters
+npx tsx src/extract_thumbnails.ts {COURSE_CODE} --output imports/{COURSE_CODE}/thumbnails.json
+
+# Extract thumbnails for specific chapter
+npx tsx src/extract_thumbnails.ts {COURSE_CODE} --chapter {N} --output imports/{COURSE_CODE}/thumbnails-ch{N}.json
+```
+
+### Step 2: Import with Thumbnails
+
+```bash
+# Import with thumbnails
+npx tsx src/main.ts {COURSE_CODE} --title "{Course Title}" --thumbnails-file imports/{COURSE_CODE}/thumbnails.json
+```
+
+## Examples
+
+### Import 2B1 course
 ```bash
 npx tsx src/main.ts 2B1 --title "Second Class Part B Paper 1"
 ```
 
-Importing only Chapter 1 of 2B2:
+### Import 2B1 with thumbnails
 ```bash
-npx tsx src/main.ts 2B2 --title "Second Class Part B Paper 2" --chapter 1
+npx tsx src/extract_thumbnails.ts 2B1 --output imports/2B1/thumbnails.json
+npx tsx src/main.ts 2B1 --title "Second Class Part B Paper 1" --thumbnails-file imports/2B1/thumbnails.json
+```
+
+### Import only Chapter 1 of 2B2
+```bash
+npx tsx src/extract_thumbnails.ts 2B2 --chapter 1 --output imports/2B2/thumbnails-ch1.json
+npx tsx src/main.ts 2B2 --title "Second Class Part B Paper 2" --chapter 1 --thumbnails-file imports/2B2/thumbnails-ch1.json
 ```
 
 ## Import History

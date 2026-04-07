@@ -14,6 +14,7 @@ export interface VideoDetails {
   parsed: ParsedVideo;
   videoId: string;
   embedUrl: string;
+  thumbnailUrl?: string;
   duration?: number;
 }
 
@@ -56,13 +57,20 @@ export function buildCourseJson(
       const tutoringAgentHtml = generateTutoringAgentHtml(video.parsed.lessonId);
       const vimeoEmbedHtml = generateVimeoEmbedHtml(video.videoId, video.parsed.lessonId);
 
-      return {
+      const post: GHLPost = {
         title: `Objective ${video.parsed.objective}`,
         visibility: 'published' as const,
         contentType: 'video',
         // Description: Vimeo embed first, then tutoring agent below
         description: `${vimeoEmbedHtml}\n\n${tutoringAgentHtml}`,
       };
+
+      // Add thumbnail URL if available
+      if (video.thumbnailUrl) {
+        post.thumbnailUrl = video.thumbnailUrl;
+      }
+
+      return post;
     });
 
     categories.push({

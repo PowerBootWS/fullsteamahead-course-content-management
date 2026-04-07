@@ -4,6 +4,8 @@
  */
 
 import axios, { AxiosError } from 'axios';
+import FormData from 'form-data';
+import fs from 'fs';
 
 const GHL_API_BASE = 'https://services.leadconnectorhq.com/courses/courses-exporter/public/import';
 const GHL_API_VERSION = '2021-07-28';
@@ -61,6 +63,13 @@ export interface GHLInstructor {
 export interface GHLImportResponse {
   success: boolean;
   message?: string;
+  error?: string;
+}
+
+export interface GHLMediaUploadResponse {
+  success: boolean;
+  fileId?: string;
+  url?: string;
   error?: string;
 }
 
@@ -122,6 +131,53 @@ export class GHLClient {
         return {
           success: false,
           error: `API error (${status}): ${JSON.stringify(data)}`,
+        };
+      }
+
+      return {
+        success: false,
+        error: `Unexpected error: ${error}`,
+      };
+    }
+  }
+
+  async uploadMedia(filePath: string, mimeType: string): Promise<GHLMediaUploadResponse> {
+    try {
+      const form = new FormData();
+      form.append('file', fs.createReadStream(filePath));
+
+      const response = await axios.post(
+        'https://services.leadconnectorhq.com/medias/upload-file',
+        form,
+        {
+          headers: {
+            ...form.getHeaders(),
+            'Authorization': `Bearer ${this.apiKey}`,
+            'Version': GHL_API_VERSION,
+          },
+        }
+      );
+
+      if (response.status === 200 || response.status === 201) {
+        return {
+          success: true,
+          fileId: response.data.fileId,
+          url: response.data.url,
+        };
+      }
+
+      return {
+        success: false,
+        error: `Unexpected response status: ${response.status}`,
+      };
+    } catch (error) {
+      if (error instanceof AxiosError) {
+        const status = error.response?.status;
+        const data = error.response?.data;
+
+        return {
+          success: false,
+          error: `Upload failed (${status}): ${JSON.stringify(data)}`,
         };
       }
 

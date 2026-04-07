@@ -3,6 +3,7 @@
  */
 
 import * as dotenv from 'dotenv';
+import * as fs from 'fs';
 import { parseArgs } from 'util';
 import { createGHLClient } from './ghl_client.js';
 import { parseVideoName, isValidVideoForCourse } from './video_parser.js';
@@ -20,6 +21,7 @@ interface CliOptions {
   dryRun: boolean;
   title?: string;
   chapter?: number;
+  thumbnailsFile?: string;
 }
 
 function parseCliArgs(): CliOptions {
@@ -28,13 +30,14 @@ function parseCliArgs(): CliOptions {
       'dry-run': { type: 'boolean', default: false },
       title: { type: 'string' },
       chapter: { type: 'string' },
+      'thumbnails-file': { type: 'string' },
     },
     allowPositionals: true,
   });
 
   if (positionals.length === 0) {
     console.error('Error: Course code is required');
-    console.error('Usage: npx tsx src/main.ts <COURSE_CODE> [--dry-run] [--title "Course Title"] [--chapter N]');
+    console.error('Usage: npx tsx src/main.ts <COURSE_CODE> [--dry-run] [--title "Course Title"] [--chapter N] [--thumbnails-file FILE]');
     process.exit(1);
   }
 
@@ -43,6 +46,7 @@ function parseCliArgs(): CliOptions {
     dryRun: values['dry-run'] as boolean,
     title: values.title as string | undefined,
     chapter: values.chapter ? parseInt(values.chapter as string, 10) : undefined,
+    thumbnailsFile: values['thumbnails-file'] as string | undefined,
   };
 }
 
@@ -187,6 +191,18 @@ async function main() {
 
   console.log(`Found ${searchResults.length} videos`);
 
+  // Load thumbnails from file if provided
+  let thumbnails: Record<string, any> = {};
+  if (options.thumbnailsFile) {
+    try {
+      const content = fs.readFileSync(options.thumbnailsFile, 'utf-8');
+      thumbnails = JSON.parse(content);
+      console.log(`Loaded ${Object.keys(thumbnails).length} thumbnails from ${options.thumbnailsFile}`);
+    } catch (error) {
+      console.error(`Failed to load thumbnails file: ${error}`);
+    }
+  }
+
   // Parse and filter videos for this course
   const videoDetails: VideoDetails[] = [];
 
@@ -212,12 +228,19 @@ async function main() {
     const videoId = video.uri.split('/').pop() || video.id;
     const embedUrl = `https://vimeo.com/${videoId}`;
 
-    videoDetails.push({
+    const videoDetail: VideoDetails = {
       parsed,
       videoId,
       embedUrl,
       duration: video.duration,
-    });
+    };
+
+    // Add thumbnail URL if available
+    if (thumbnails[parsed.lessonId]?.ghlUrl) {
+      videoDetail.thumbnailUrl = thumbnails[parsed.lessonId].ghlUrl;
+    }
+
+    videoDetails.push(videoDetail);
 
     console.log(`  Found: ${name} -> lesson ${parsed.lessonId}`);
   }
