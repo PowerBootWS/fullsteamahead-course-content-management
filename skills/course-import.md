@@ -82,7 +82,21 @@ npx tsx src/main.ts {COURSE_CODE} --title "{Course Title}" --chapter {N}
 
 Thumbnails are extracted from Vimeo and uploaded to GHL media library, then set on posts.
 
-### Step 1: Extract Thumbnails
+### Option 1: Set Thumbnail at Specific Time (Recommended)
+
+This sets the thumbnail at a specific timestamp (e.g., 3 seconds) in Vimeo, then extracts and uploads to GHL.
+
+```bash
+# Set thumbnails at 3 seconds and extract for specific chapter
+npx tsx src/extract_thumbnails.ts {COURSE_CODE} --chapter {N} --set-thumbnails --time 3 --output imports/{COURSE_CODE}/thumbnails-ch{N}.json
+
+# Then import with thumbnails
+npx tsx src/main.ts {COURSE_CODE} --title "{Course Title}" --chapter {N} --thumbnails-file imports/{COURSE_CODE}/thumbnails-ch{N}.json
+```
+
+### Option 2: Use Existing Thumbnails
+
+If thumbnails are already set correctly in Vimeo, just extract and import.
 
 ```bash
 # Extract thumbnails for all chapters
@@ -90,11 +104,7 @@ npx tsx src/extract_thumbnails.ts {COURSE_CODE} --output imports/{COURSE_CODE}/t
 
 # Extract thumbnails for specific chapter
 npx tsx src/extract_thumbnails.ts {COURSE_CODE} --chapter {N} --output imports/{COURSE_CODE}/thumbnails-ch{N}.json
-```
 
-### Step 2: Import with Thumbnails
-
-```bash
 # Import with thumbnails
 npx tsx src/main.ts {COURSE_CODE} --title "{Course Title}" --thumbnails-file imports/{COURSE_CODE}/thumbnails.json
 ```
