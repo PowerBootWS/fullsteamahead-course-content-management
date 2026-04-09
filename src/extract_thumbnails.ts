@@ -105,6 +105,37 @@ async function getVimeoThumbnailUrl(accessToken: string, videoId: string): Promi
 }
 
 /**
+ * Set thumbnail at specific timestamp (in seconds)
+ */
+async function setVimeoThumbnailAtTime(accessToken: string, videoId: string, timeSeconds: number): Promise<boolean> {
+  try {
+    const response = await fetch(`https://api.vimeo.com/videos/${videoId}/pictures`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${accessToken}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        time: timeSeconds,
+        active: true,
+      }),
+    });
+
+    if (!response.ok) {
+      const error = await response.text();
+      console.error(`Failed to set thumbnail for ${videoId}: ${response.status} - ${error}`);
+      return false;
+    }
+
+    console.log(`  Set thumbnail at ${timeSeconds}s for video ${videoId}`);
+    return true;
+  } catch (error) {
+    console.error(`Error setting thumbnail for ${videoId}:`, error);
+    return false;
+  }
+}
+
+/**
  * Search Vimeo for videos matching course code
  */
 async function searchVimeoVideos(accessToken: string, query: string): Promise<any[]> {
@@ -247,15 +278,19 @@ async function main() {
       'dry-run': { type: 'boolean', default: false },
       'output': { type: 'string' },
       chapter: { type: 'string' },
+      'set-thumbnails': { type: 'boolean', default: false },
+      'time': { type: 'string', default: '3' },
     },
     allowPositionals: true,
   });
 
   const courseCode = positionals[0];
   const chapterFilter = values.chapter ? parseInt(values.chapter as string, 10) : undefined;
+  const setThumbnails = values['set-thumbnails'] as boolean;
+  const timeSeconds = parseFloat(values.time as string);
 
   if (!courseCode) {
-    console.error('Usage: npx tsx src/extract_thumbnails.ts <COURSE_CODE> [--dry-run] [--output FILE] [--chapter N]');
+    console.error('Usage: npx tsx src/extract_thumbnails.ts <COURSE_CODE> [--dry-run] [--output FILE] [--chapter N] [--set-thumbnails] [--time SECONDS]');
     process.exit(1);
   }
 
@@ -273,6 +308,7 @@ async function main() {
   console.log(`\n=== Thumbnail Extraction ===`);
   console.log(`Course Code: ${courseCode}`);
   if (chapterFilter) console.log(`Chapter Filter: ${chapterFilter}`);
+  if (setThumbnails) console.log(`Set Thumbnails: YES at ${timeSeconds}s`);
   console.log(`Mode: ${values['dry-run'] ? 'DRY RUN' : 'LIVE'}`);
   console.log('');
 
@@ -284,6 +320,37 @@ async function main() {
   const results: ThumbnailResult[] = [];
 
   for (const video of searchResults) {
+    const name = video.name;
+
+    if (!isValidVideoForCourse(name, courseCode)) {
+      continue;
+    }
+
+    const parsed = parseVideoName(name);
+    if (!parsed) {
+      continue;
+    }
+
+    if (chapterFilter !== undefined && parsed.chapter !== chapterFilter) {
+      continue;
+    }
+
+    const videoId = video.uri.split('/').pop() || '';
+    const lessonId = parsed.lessonId;
+
+    // Step 1: Set thumbnail at specified time if flag is set
+    if (setThumbnails) {
+      console.log(`Setting thumbnail for ${lessonId} at ${timeSeconds}s...`);
+      const setSuccess = await setVimeoThumbnailAtTime(VIMEO_ACCESS_TOKEN, videoId, timeSeconds);
+      if (!setSuccess) {
+        console.log(`  ✗ Failed to set thumbnail for ${lessonId}`);
+        continue;
+      }
+      // Wait a moment for Vimeo to process
+      await new Promise(resolve => setTimeout(resolve, 2000));
+    }
+
+    // Step 2: Process video (download thumbnail, upload to GHL)
     const result = await processVideo(VIMEO_ACCESS_TOKEN, ghlClient, video, courseCode, tempDir, chapterFilter);
     results.push(result);
 
