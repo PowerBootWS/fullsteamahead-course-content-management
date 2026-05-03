@@ -136,25 +136,41 @@ async function setVimeoThumbnailAtTime(accessToken: string, videoId: string, tim
 }
 
 /**
- * Search Vimeo for videos matching course code
+ * Search Vimeo for videos matching course code (handles pagination)
  */
 async function searchVimeoVideos(accessToken: string, query: string): Promise<any[]> {
-  const response = await fetch(
-    `https://api.vimeo.com/me/videos?query=${encodeURIComponent(query)}&sort=date&direction=asc&per_page=50`,
-    {
-      headers: {
-        'Authorization': `Bearer ${accessToken}`,
-        'Content-Type': 'application/json',
-      },
-    }
-  );
+  const allVideos: any[] = [];
+  let page = 1;
+  let hasMore = true;
 
-  if (!response.ok) {
-    throw new Error(`Vimeo API error: ${response.status} ${response.statusText}`);
+  while (hasMore) {
+    const response = await fetch(
+      `https://api.vimeo.com/me/videos?query=${encodeURIComponent(query)}&sort=date&direction=asc&per_page=50&page=${page}`,
+      {
+        headers: {
+          'Authorization': `Bearer ${accessToken}`,
+          'Content-Type': 'application/json',
+        },
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error(`Vimeo API error: ${response.status} ${response.statusText}`);
+    }
+
+    const data = await response.json();
+    const videos = data.data || [];
+    allVideos.push(...videos);
+
+    // Check if there are more pages
+    if (data.paging?.next) {
+      page++;
+    } else {
+      hasMore = false;
+    }
   }
 
-  const data = await response.json();
-  return data.data || [];
+  return allVideos;
 }
 
 /**

@@ -1,5 +1,5 @@
 {
-  "name": "fullsteamahead-course-content-management",
+  "name": "fsa-course-content-management",
   "version": "1.0.0",
   "description": "Import course content from Vimeo to GoHighLevel",
   "type": "module",
