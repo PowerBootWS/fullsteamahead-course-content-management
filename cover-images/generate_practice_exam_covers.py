@@ -23,7 +23,7 @@ from dotenv import load_dotenv
 # ── Config ────────────────────────────────────────────────────────────────────
 
 SCRIPT_DIR = Path(__file__).parent
-load_dotenv(SCRIPT_DIR / ".env")
+load_dotenv(SCRIPT_DIR.parent.parent / ".env")
 
 API_KEY = os.environ.get("OPENROUTER_API_KEY")
 MODEL = "google/gemini-3.1-flash-image-preview:image"
